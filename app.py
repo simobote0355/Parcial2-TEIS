@@ -18,8 +18,6 @@ def factorial_page(number):
     number = int(number)
     factorial = factoriall(number)
     return jsonify({'number': number, 'factorial': factorial})
-    #else:
-    #    return jsonify(error="Numero negativo")
 
 if __name__ == '__main__':
     app.run(debug=True)
